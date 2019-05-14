@@ -9,9 +9,11 @@ def search(collection, key):
   # key: 찾고자하는 값
   
   """최고의 성능을 가진 탐색 알고리즘을 만들어 보세요 ! """
-  
-  # Your Code
-  # Your Code
+  index = -1
+  for i in range(0, len(collection)):
+    if collection[i] == key:
+      index = i
+      break
   return index  # 찾고자하는 값이 array에 있을때 array의 index를 반환, array에 찾고자하는 값이 없다면 -1 반환
 
 
@@ -26,5 +28,5 @@ print(stop - start)
 print(index)
 
 
-# 나의 수행 시간
-# ???
+# 5.0937999731104355e-05
+# 78
